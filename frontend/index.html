@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acortador de Enlaces Cloud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Acortador de Enlaces</h1>
+        <p class="subtitle">Ingresa una URL larga para generar tu enlace corto en AWS</p>
+        
+        <div class="card">
+            <input type="url" id="urlInput" placeholder="https://ejemplo.com/articulo-largo" required>
+            <button id="shortenBtn" onclick="shortenUrl()">Acortar URL</button>
+        </div>
+
+        <div id="resultContainer" class="hidden">
+            <h3>¡Enlace generado con éxito!</h3>
+            <div class="result-box">
+                <input type="text" id="shortUrlOutput" readonly>
+                <button id="copyBtn" onclick="copyToClipboard()">Copiar</button>
+            </div>
+            <a id="visitLink" href="#" target="_blank">Probar enlace corto</a>
+        </div>
+
+        <div id="errorContainer" class="hidden error-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
