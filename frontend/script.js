@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://<IP-PUBLICA-EC2>:8000";
+const API_BASE_URL = "http://54.173.15.1:8000";
 
 async function shortenUrl() {
     const urlInput = document.getElementById("urlInput").value;
